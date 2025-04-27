@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/legal-help": {"origins": "http://localhost:3000"}})  # Allow requests from React frontend
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyD4-XgjIHC8DuDtT4MRnep8z82XJ_GgzYc"  # Replace with your actual API key
+GEMINI_API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro")
 
